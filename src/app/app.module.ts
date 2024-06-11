@@ -9,6 +9,7 @@ import { DemoComponent } from './demo/demo.component';
 import { Demo1Component } from './demo/demo1/demo1.component';
 import { FormsModule } from '@angular/forms';
 import { Demo2Component } from './demo/demo2/demo2.component';
+import { EurtousdPipe } from './demo/demo2/eurtousd.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { Demo2Component } from './demo/demo2/demo2.component';
     AboutComponent,
     DemoComponent,
     Demo1Component,
-    Demo2Component
+    Demo2Component,
+    EurtousdPipe
   ],
   imports: [
     BrowserModule,

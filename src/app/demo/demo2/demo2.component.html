@@ -1,1 +1,28 @@
 <h3>Les pipes</h3>
+<h3>String pipes : {{mystring}}</h3>
+<p>Uppercase : {{mystring | uppercase}}</p>
+<p>Lowercase : {{mystring | lowercase}}</p>
+<p>Titlecase : {{mystring | titlecase}}</p>
+<hr />
+<h3>Number Pipes : {{mynumber}}</h3>
+<p>Number : {{mynumber | number : '2.1-3'}}</p>
+<!-- le format est défini par :
+  1) le nombre de chiffre AVANT la virgule
+  .
+  2) un minimum et un maximum de chiffre après la virgule (arrondi) -->
+<p>Curreny : {{mynumber | currency : 'JPY'}}</p>
+<hr />
+<h3>Date Pipe : {{mydate}}</h3>
+<p>Datepipe : {{mydate | date : 'dd-M/yy seconde nn'}}</p>
+
+<!-- https://docs.automic.com/documentation/WEBHELP/French/AWA/11.2/AE/11.2/All%20Guides/Content/ucaaex.htm -->
+
+<hr />
+<h3>Oject pipe : {{myobject}}</h3>
+<p>Jsonpipe : {{myobject | json}}</p>
+
+<hr />
+<h3>Custom pipe : {{mynumber}}</h3>
+<p>Eur To USD Pipe : {{mynumber | eurtousd : 'USD'}}</p>
+<p>Eur To USD Pipe : {{mynumber | eurtousd : 'JPY'}}</p>
+<p>Eur To USD Pipe : {{mynumber | eurtousd : 'EUR'}}</p>
