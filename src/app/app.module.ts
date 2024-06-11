@@ -10,6 +10,10 @@ import { Demo1Component } from './demo/demo1/demo1.component';
 import { FormsModule } from '@angular/forms';
 import { Demo2Component } from './demo/demo2/demo2.component';
 import { EurtousdPipe } from './demo/demo2/eurtousd.pipe';
+import { ExoComponent } from './exo/exo.component';
+import { Exo1Component } from './exo/exo1/exo1.component';
+import { ToFarheneitPipe } from './exo/exo1/to-farheneit.pipe';
+import { JhmsPipe } from './exo/exo1/jhms.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { EurtousdPipe } from './demo/demo2/eurtousd.pipe';
     DemoComponent,
     Demo1Component,
     Demo2Component,
-    EurtousdPipe
+    EurtousdPipe,
+    ExoComponent,
+    Exo1Component,
+    ToFarheneitPipe,
+    JhmsPipe
   ],
   imports: [
     BrowserModule,
