@@ -1,0 +1,14 @@
+<h3>Les bindings</h3>
+<p>Valeur de mystring : {{mystring}}</p>
+<!-- One-WAY binding : Lecture de la valeur d'une propriété -->
+
+<input type="text" [(ngModel)]="mystring">
+<!-- Two-ways binding : Lecture + Ecriture de propriétés-->
+
+<p>
+  <button (click)="changementDeValeur()"
+          [disabled]="mystring == 'ON S\'EN TAPE DU LORE DE WOW !!!'"
+  >Click</button>
+</p>
+<!-- Event Binding : Réaction à un évènement JS -->
+<!-- Attribute Binding : Affectation d'une valeur à une attribut html -->
